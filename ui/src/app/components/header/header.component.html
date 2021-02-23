@@ -1,1 +1,66 @@
-<p>header works!</p>
+<header class="header flex-grid">
+	<div class="lefts flex">
+		<div class="logo-area flex">
+			<a href="javascript:;" class="btn-logo company-logo">
+				<img src="assets/images/logo_transparent.png" alt="img" />
+			</a>
+			<div class="line"></div>
+			<a [routerLink]="['/home-page']" class="btn-logo dig-logo">
+				<img src="assets/images/logo_1_transparent.png" alt="img" />
+			</a>
+		</div>
+		<div class="header-nav">
+			<ul class="flex">
+				<li>
+					<a [routerLink]="['/home']" class="tab-items"
+					  [class.current]="activeMenu === 'Home'"
+                      (click)="activeMenu = 'Home'">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="tab-items"
+					  [class.current]="activeMenu === 'Blogs'"
+                      (click)="activeMenu = 'Blogs'">
+						Blogs
+					</a>
+				</li>
+                <li>
+					<a href="javascript:;" class="tab-items"
+					  [class.current]="activeMenu === 'About'"
+                      (click)="activeMenu = 'About'">
+						About
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="tab-items"
+					  [class.current]="activeMenu === 'Contact Us'"
+                      (click)="activeMenu = 'Contact Us'">
+						Contact Us 
+					</a>
+				</li>
+			
+			</ul>
+		</div>
+		<!--end .header-nav-->
+
+		<div class="social-share-icons ">
+			<ul class="flex">
+				<li>
+					<img src="/assets/images/linkedin.png" alt="" srcset="">
+				</li>
+				<li>
+					<img src="/assets/images/github.png" alt="" srcset="">
+				</li>
+				<li>
+					<img src="/assets/images/twitter.png" alt="" srcset="">
+				</li>
+				<li>
+					<img src="/assets/images/instagram.png" alt="" srcset="">
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</header>
+<!-- end .header -->

@@ -1,0 +1,35 @@
+.subscribe {
+  border-top: 1px solid #404040;
+  border-bottom: 1px solid #404040;
+  padding: 60px;
+  width: 65%;
+  margin: auto;
+  justify-content: space-between;
+  .bld-txt {
+    letter-spacing: 3px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .subscribe-form {
+    width: 50%;
+    justify-content: flex-end;
+    align-items: baseline;
+    input {
+      border: none;
+      border-bottom: 1px solid #303030;
+      margin-right: 20px;
+      width: 100%;
+    }
+    button {
+      border: none;
+      background-color: #404040;
+      color: #fff;
+      padding: 12px;
+      width: 180px;
+      letter-spacing: 3px;
+    }
+  }
+  
+ 
+}
+

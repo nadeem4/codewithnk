@@ -10,6 +10,8 @@ import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.compon
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 import { PrivacyPolicyPageComponent } from './pages/privacy-policy-page/privacy-policy-page.component';
 import { TermsAndConditionPageComponent } from './pages/terms-and-condition-page/terms-and-condition-page.component';
+import { ComponentsModule } from './components/components.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { TermsAndConditionPageComponent } from './pages/terms-and-condition-page
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
