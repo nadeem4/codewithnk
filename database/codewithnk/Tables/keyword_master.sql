@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[keyword_master]
+(
+	[id] INT NOT NULL IDENTITY(0,1),
+	[name] NVARCHAR(1000) NOT NULL,
+	[views] INT NOT NULL DEFAULT 0,
+	[shares] INT NOT NULL DEFAULT 0,
+	[likes] INT NOT NULL DEFAULT 0,
+	created_datetime DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	updated_datetime DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	created_by NVARCHAR(200) NOT NULL,
+	updated_by NVARCHAR(200) NOT NULL,
+	CONSTRAINT pk_keyword_master_id PRIMARY KEY(id)
+)

@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{79c9e8c8-61fc-4709-8a24-552742de822a}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -56,5 +56,24 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Stored Procedure" />
+    <Folder Include="User Defined Table Types" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\user_master.sql" />
+    <Build Include="Tables\user_role.sql" />
+    <Build Include="Tables\course_master.sql" />
+    <Build Include="Tables\course_keywords.sql" />
+    <Build Include="Tables\keyword_master.sql" />
+    <Build Include="Tables\blog_master.sql" />
+    <Build Include="Tables\course_action.sql" />
+    <Build Include="Tables\sub_course_master.sql" />
+    <Build Include="Tables\course_author.sql" />
+    <Build Include="Tables\category_master.sql" />
+    <Build Include="Tables\blog_category.sql" />
+    <Build Include="Tables\course_category.sql" />
+    <Build Include="Tables\blog_action.sql" />
+    <Build Include="Tables\blog_keyword.sql" />
   </ItemGroup>
 </Project>

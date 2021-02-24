@@ -1,0 +1,10 @@
+D:\code_with_nk\database\codewithnk\bin\Debug\codewithnk.dacpac
+D:\code_with_nk\database\codewithnk\obj\Debug\codewithnk.sqlprojAssemblyReference.cache
+D:\code_with_nk\database\codewithnk\obj\Debug\Model.xml
+D:\code_with_nk\database\codewithnk\obj\Debug\refactor.xml
+D:\code_with_nk\database\codewithnk\obj\Debug\postdeploy.sql
+D:\code_with_nk\database\codewithnk\obj\Debug\predeploy.sql
+D:\code_with_nk\database\codewithnk\obj\Debug\codewithnk.dll
+D:\code_with_nk\database\codewithnk\obj\Debug\codewithnk.pdb
+D:\code_with_nk\database\codewithnk\bin\Debug\codewithnk.dll
+D:\code_with_nk\database\codewithnk\bin\Debug\codewithnk.pdb
