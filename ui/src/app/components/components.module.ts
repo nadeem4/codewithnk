@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
-import {MatFormFieldModule} from '@angular/material/form-field'
-import {MatButtonModule} from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,14 +13,22 @@ import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { FeaturedPostComponent } from './featured-post/featured-post.component';
+import { TopicsComponent } from './topics/topics.component';
 
 const Components = [
-  FooterComponent, HeaderComponent, BannerComponent, PostComponent, BlogComponent, SubscribeComponent
-]
+  FooterComponent,
+  HeaderComponent,
+  BannerComponent,
+  PostComponent,
+  BlogComponent,
+  SubscribeComponent,
+  FeaturedPostComponent,
+  TopicsComponent,
+];
 
 @NgModule({
-  declarations: [...Components, ],
+  declarations: [...Components],
   imports: [
     BrowserModule,
     CommonModule,
@@ -29,8 +36,8 @@ const Components = [
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
   ],
-  exports: [ ...Components]
+  exports: [...Components],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

@@ -1,14 +1,16 @@
 .subscribe {
-  border-top: 1px solid #404040;
-  border-bottom: 1px solid #404040;
-  padding: 60px;
-  width: 65%;
+  background-color: #eef0f2;
+  padding: 60px 48px 60px 60px;
+  width: 62.5%;
   margin: auto;
   justify-content: space-between;
+  margin-bottom: 20px;
   .bld-txt {
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     font-size: 32px;
     font-weight: 700;
+    line-height: 32px;
+    padding: 12px;
   }
   .subscribe-form {
     width: 50%;
@@ -19,6 +21,7 @@
       border-bottom: 1px solid #303030;
       margin-right: 20px;
       width: 100%;
+      padding: 12px;
     }
     button {
       border: none;
@@ -29,7 +32,4 @@
       letter-spacing: 3px;
     }
   }
-  
- 
 }
-
