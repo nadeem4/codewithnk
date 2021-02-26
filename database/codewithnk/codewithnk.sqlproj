@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{79c9e8c8-61fc-4709-8a24-552742de822a}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -22,6 +22,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <GenerateCreateScript>True</GenerateCreateScript>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -75,5 +76,17 @@
     <Build Include="Tables\course_category.sql" />
     <Build Include="Tables\blog_action.sql" />
     <Build Include="Tables\blog_keyword.sql" />
+    <Build Include="Stored Procedure\create_blog.sql" />
+    <Build Include="Stored Procedure\create_course.sql" />
+    <Build Include="Stored Procedure\create_keywords.sql" />
+    <Build Include="Stored Procedure\create_category.sql" />
+    <Build Include="Stored Procedure\assign_category_if_exist.sql" />
+    <Build Include="Stored Procedure\assign_keyword_if_exist.sql" />
+    <Build Include="User Defined Table Types\udtt_ids.sql" />
+    <Build Include="User Defined Table Types\udtt_ids_string.sql" />
+    <Build Include="Tables\blog_comments.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="codewithnk.publish.xml" />
   </ItemGroup>
 </Project>

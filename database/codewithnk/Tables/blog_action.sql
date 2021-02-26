@@ -11,5 +11,5 @@
 	CONSTRAINT pk_blog_views_id PRIMARY KEY(id),
 	CONSTRAINT fk_blog_views_course_id_course_master_id FOREIGN KEY(blog_id) REFERENCES blog_master(id),
 	CONSTRAINT fk_blog_views_user_id_user_master_id FOREIGN KEY(blog_id) REFERENCES user_master(id),
-	CONSTRAINT fk_blog_action_types CHECK ([type] IN ('View', 'Like', 'Share'))
+	CONSTRAINT fk_blog_action_types CHECK ([type] IN ('View', 'Like', 'Share', 'Comment'))
 )
